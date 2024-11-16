@@ -293,7 +293,7 @@ body {
 @media (max-width: 600px) {
 
   body {
-    background-color: green;
+    background-color: lightBlue;
   }
 
   #start-screen, #game-over-screen {
