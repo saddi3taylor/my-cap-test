@@ -304,7 +304,7 @@ body {
   }
   
   .delete-icon, .edit-icon {
-  font-size: 1vh;
+  font-size: 5rem;
 }
 
   #instructions {
