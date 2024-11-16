@@ -380,7 +380,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
   }
 
   .delete-icon, .edit-icon {
-    font-size: 4rem; /* Larger icons for easier tapping on mobile */
+    font-size: 7rem; /* Larger icons for easier tapping on mobile */
     width: 80px; /* Increased width for better accessibility */
     height: 80px; /* Increased height for better accessibility */
   }
