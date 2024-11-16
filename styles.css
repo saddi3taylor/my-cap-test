@@ -242,14 +242,17 @@ body {
   border-bottom: 1px solid #d8cb92;
 }
 
+/* Edit and Delete Button - Mobile-Friendly Update */
 .delete-icon, .edit-icon {
   color: #d8cb92;
   cursor: pointer;
-  font-size: 1.5rem; /* Added size to make icon visible */
+  font-size: 2.5rem; /* Increased size for better visibility */
   transition: color 0.3s;
-  width: 24px; /* Added explicit width */
-  height: 24px; /* Added explicit height */
-  display: inline-block;
+  width: 40px; /* Increased explicit width */
+  height: 40px; /* Increased explicit height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .delete-icon:hover {
@@ -368,5 +371,11 @@ body {
   #min-score, #initials-filter, #edit-initials {
     font-size: 2.5vh; /* Increased for better usability on mobile */
     padding: 12px; /* More padding for input comfort */
+  }
+  
+  .delete-icon, .edit-icon {
+    font-size: 3rem; /* Larger icons for easier tapping */
+    width: 50px; /* Increased width for better accessibility */
+    height: 50px; /* Increased height for better accessibility */
   }
 }
