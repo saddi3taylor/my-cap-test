@@ -378,5 +378,6 @@ body {
     font-size: 5rem; /* Larger icons for easier tapping on mobile */
     width: 70px; /* Increased width for better accessibility */
     height: 70px; /* Increased height for better accessibility */
+    border: 1px solid green;
   }
 }
