@@ -207,7 +207,176 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #d8cb92;
-  font-size: 2rem;
+  background: #d8cb92;
+  color: #011F3F;
+  border: none;
+  padding: 10px 15px;
   cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+#close-popup:hover, #close-history:hover {
+  background-color: #ffc107;
+}
+
+#help-popup-content p, #history-popup-content p, #timeout-popup-content p, #delete-popup-content p, #edit-popup-content p {
+  font-size: 2rem; /* Increased paragraph text inside popups */
+  line-height: 1.6;
+  color: #d8cb92;
+}
+
+#history-list {
+  text-align: left;
+  font-size: 1.8rem; /* Increased font size for history list */
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+#history-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #d8cb92;
+}
+
+/* Edit and Delete Button - Mobile-Friendly Update */
+.delete-icon, .edit-icon {
+  color: #d8cb92;
+  cursor: pointer;
+  font-size: 2rem; /* Increased size for better visibility */
+  transition: color 0.3s;
+  width: 40px; /* Increased explicit width */
+  height: 40px; /* Increased explicit height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-icon:hover {
+  color: #ff4444; /* Change color on hover to indicate delete action */
+}
+
+.edit-icon:hover {
+  color: #ffc107; /* Change color on hover to indicate edit action */
+}
+
+#delete-details {
+  color: red !important;
+  font-weight: bold;
+}
+
+#delete-yes-btn, #delete-no-btn, #save-edit-btn, #cancel-edit-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  margin-top: 15px;
+  margin-right: 10px; /* Adds space between buttons */
+  color: #000;
+}
+
+#delete-no-btn, #cancel-edit-btn {
+  margin-left: 10px; /* Adds space between buttons */
+}
+
+#min-score, #initials-filter, #edit-initials {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-size: 1.8rem; /* Increased input font size for popup forms */
+  margin-bottom: 10px;
+}
+
+/* Specific Media Query for Mobile Screens */
+@media (max-width: 600px) {
+  #start-screen, #game-over-screen {
+       height: calc(100vh - env(safe-area-inset-bottom));
+  }
+
+  .welcome {
+    font-size: 3vh; /* Scaled up for better readability */
+  }
+
+  .game-title, .game-over-title {
+    font-size: clamp(5rem, 10vw, 8rem); /* Increased but manageable for mobile */
+  }
+
+  #instructions {
+    font-size: 2.5vh; /* Increased for better readability */
+    max-width: 90%;
+  }
+
+  #start-bttn, #restart-bttn, #timeout-ok-btn, #save-score-btn, #delete-yes-btn, #delete-no-btn, #save-edit-btn, #cancel-edit-btn {
+    font-size: 3vh; /* Larger for better readability on mobile */
+    padding: 20px 40px; /* Increased button padding */
+  }
+
+  #initials-label {
+    font-size: 2.5vh; /* Increased for better readability */
+  }
+
+  #final-score {
+    font-size: 3vh; /* Larger for better readability */
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust to two columns layout */
+    gap: 25px; /* Increased gap for mobile */
+  }
+
+  .btn {
+    width: clamp(160px, 40vw, 240px); /* Increased for easier tapping */
+    height: clamp(160px, 40vw, 240px);
+  }
+
+  #help-button, #game-history-button {
+    width: 75px; /* Increased size for mobile */
+    height: 75px; /* Increased size for mobile */
+    font-size: 2.5vh; /* Adjusted size for readability */
+  }
+
+  .fixed-buttons-container {
+    top: 15px;
+    right: 15px;
+    gap: 25px; /* Adjusted space between help and history buttons */
+  }
+
+  #help-popup-content, #history-popup-content, #timeout-popup-content, #delete-popup-content, #edit-popup-content {
+    padding: 40px; /* More padding for larger content */
+    width: 95%; /* Wider for better mobile presentation */
+  }
+
+  .popup-title, .popup-title-history, .popup-title-session, .popup-title-delete, .popup-title-edit {
+    font-size: 3rem; /* Increased for mobile readability */
+  }
+
+  #close-popup, #close-history {
+    padding: 12px 20px; /* Larger close button for easier tapping */
+    font-size: 2rem; /* Increased for readability */
+  }
+
+  #help-popup-content p, #history-popup-content p, #timeout-popup-content p, #delete-popup-content p, #edit-popup-content p {
+    font-size: 2.5vh; /* Increased for better readability */
+    max-width: 90%;
+  }
+
+  #history-list {
+    font-size: 2rem; /* Increased size for easier reading */
+  }
+
+  #min-score, #initials-filter, #edit-initials {
+    font-size: 2.5vh; /* Increased for better usability on mobile */
+    padding: 12px; /* More padding for input comfort */
+  }
+
+  .delete-icon, .edit-icon {
+    font-size: 3rem; /* Larger icons for easier tapping */
+    width: 50px; /* Increased width for better accessibility */
+    height: 50px; /* Increased height for better accessibility */
+  }
 }
