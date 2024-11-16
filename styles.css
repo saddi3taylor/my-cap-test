@@ -302,10 +302,6 @@ body {
   .game-title, .game-over-title {
     font-size: clamp(5rem, 10vw, 8rem); /* Increased but manageable for mobile */
   }
-  
-  .delete-icon, .edit-icon {
-  font-size: 5rem;
-}
 
   #instructions {
     font-size: 2.5vh; /* Increased for better readability */
