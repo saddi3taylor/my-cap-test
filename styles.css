@@ -247,10 +247,8 @@ body {
 .delete-icon, .edit-icon {
   color: #d8cb92;
   cursor: pointer;
-  font-size: 2rem; /* Increased size for better visibility */
+  font-size: 3vh; /* Increased size for better visibility */
   transition: color 0.3s;
-  width: 40px; /* Increased explicit width */
-  height: 40px; /* Increased explicit height */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -374,7 +372,4 @@ body {
     padding: 12px; /* More padding for input comfort */
   }
 
-  .delete-icon, .edit-icon {
-    font-size: 60rem; /* Larger icons for easier tapping */
-  }
 }
