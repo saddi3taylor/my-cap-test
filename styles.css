@@ -292,10 +292,6 @@ body {
 /* Specific Media Query for Mobile Screens */
 @media (max-width: 600px) {
 
-  body {
-    background-color: orange;
-  }
-  
   #start-screen, #game-over-screen {
        height: calc(100vh - env(safe-area-inset-bottom));
   }
