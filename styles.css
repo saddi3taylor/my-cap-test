@@ -1,3 +1,5 @@
+/* Enhanced Mobile-Friendly Updates for Game Over Screen */
+
 /* Base Reset for Full Height */
 body, html {
   height: 100%;
@@ -319,7 +321,13 @@ body {
   }
 
   #final-score {
-    font-size: 3vh; /* Larger for better readability */
+    font-size: 5vh; /* Increased for better readability */
+  }
+
+  #player-initials {
+    font-size: 3vh; /* Increased input font size */
+    padding: 15px; /* Added more padding for comfort */
+    width: 80%; /* Increased width for easier typing */
   }
 
   .container {
@@ -329,14 +337,14 @@ body {
   }
 
   .btn {
-    width: clamp(160px, 40vw, 240px); /* Increased for easier tapping */
-    height: clamp(160px, 40vw, 240px);
+    width: clamp(180px, 50vw, 300px); /* Increased width for better tapping area */
+    height: clamp(180px, 50vw, 300px); /* Increased height for better tapping area */
   }
 
   #help-button, #game-history-button {
-    width: 75px; /* Increased size for mobile */
-    height: 75px; /* Increased size for mobile */
-    font-size: 2.5vh; /* Adjusted size for readability */
+    width: 90px; /* Increased size for easier tapping */
+    height: 90px; /* Increased size for easier tapping */
+    font-size: 3vh; /* Adjusted size for better readability */
   }
 
   .fixed-buttons-container {
@@ -346,17 +354,17 @@ body {
   }
 
   #help-popup-content, #history-popup-content, #timeout-popup-content, #delete-popup-content, #edit-popup-content {
-    padding: 40px; /* More padding for larger content */
+    padding: 50px; /* More padding for larger content */
     width: 95%; /* Wider for better mobile presentation */
   }
 
   .popup-title, .popup-title-history, .popup-title-session, .popup-title-delete, .popup-title-edit {
-    font-size: 3rem; /* Increased for mobile readability */
+    font-size: 3.5rem; /* Increased for mobile readability */
   }
 
   #close-popup, #close-history {
-    padding: 12px 20px; /* Larger close button for easier tapping */
-    font-size: 2rem; /* Increased for readability */
+    padding: 15px 25px; /* Larger close button for easier tapping */
+    font-size: 2.5rem; /* Increased for readability */
   }
 
   #help-popup-content p, #history-popup-content p, #timeout-popup-content p, #delete-popup-content p, #edit-popup-content p {
@@ -372,7 +380,7 @@ body {
     font-size: 2.5vh; /* Increased for better usability on mobile */
     padding: 12px; /* More padding for input comfort */
   }
-  
+
   .delete-icon, .edit-icon {
     font-size: 3rem; /* Larger icons for easier tapping */
     width: 50px; /* Increased width for better accessibility */
