@@ -7,7 +7,7 @@ body, html {
 
 body {
   text-align: center;
-  background-color: #d8cb92;
+  background-color: #011F3F;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,8 +378,7 @@ body {
   }
 
   .delete-icon, .edit-icon {
-    width: 50px;
-    height: 50px;
+    font-size: 3rem;
   }
 
 }
