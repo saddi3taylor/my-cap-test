@@ -249,6 +249,8 @@ body {
   cursor: pointer;
   font-size: 2rem; /* Increased size for better visibility */
   transition: color 0.3s;
+  width: 40px; /* Increased explicit width */
+  height: 40px; /* Increased explicit height */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -304,7 +306,7 @@ body {
   }
 
   #instructions {
-    font-size: 3rem; /* Increased for better readability */
+    font-size: 6.5vh; /* Increased for better readability */
     max-width: 90%;
   }
 
@@ -314,7 +316,7 @@ body {
   }
 
   #initials-label {
-    font-size: 5rem; /* Increased for better readability */
+    font-size: 6.5vh; /* Increased for better readability */
   }
 
   #final-score {
@@ -372,4 +374,9 @@ body {
     padding: 12px; /* More padding for input comfort */
   }
 
+  .delete-icon, .edit-icon {
+    font-size: 5rem; /* Larger icons for easier tapping on mobile */
+    width: 70px; /* Increased width for better accessibility */
+    height: 70px; /* Increased height for better accessibility */
+  }
 }
