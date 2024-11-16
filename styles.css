@@ -381,7 +381,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
 
   .delete-icon, .edit-icon {
     font-size: 4rem; /* Larger icons for easier tapping on mobile */
-    width: 60px; /* Increased width for better accessibility */
-    height: 60px; /* Increased height for better accessibility */
+    width: 80px; /* Increased width for better accessibility */
+    height: 80px; /* Increased height for better accessibility */
   }
 }
