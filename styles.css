@@ -100,13 +100,12 @@ body {
 
 #final-score {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem; /* Increased final score size */
+  font-size: 2rem;
   color: #d8cb92;
   margin-bottom: 15px;
 }
 
 #player-initials {
-  font-size: 2rem; /* Increased text field size */
   margin: 20px auto;
 }
 
@@ -122,8 +121,8 @@ body {
 
 .btn {
   flex: 1 1 45%;
-  width: clamp(150px, 25vw, 250px); /* Increased button size */
-  height: clamp(150px, 25vw, 250px); /* Increased button size */
+  width: clamp(120px, 20vw, 200px);
+  height: clamp(120px, 20vw, 200px);
   border: 8px solid black;
   border-radius: 20%;
   transition: all 0.2s ease;
@@ -157,13 +156,13 @@ body {
   background-color: #d8cb92;
   color: #011F3F;
   border-radius: 50%;
-  width: 100px; /* Increased button size */
-  height: 100px; /* Increased button size */
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Press Start 2P', cursive;
-  font-size: 2.5rem; /* Increased button text size */
+  font-size: 2rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -375,8 +374,8 @@ body {
   }
 
   .delete-icon, .edit-icon {
-    font-size: 5rem; /* Larger icons for easier tapping on mobile */
-    width: 70px; /* Increased width for better accessibility */
-    height: 70px; /* Increased height for better accessibility */
+    font-size: 3rem; /* Larger icons for easier tapping */
+    width: 50px; /* Increased width for better accessibility */
+    height: 50px; /* Increased height for better accessibility */
   }
 }
